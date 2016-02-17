@@ -1,0 +1,95 @@
+/* MAIN STYLE FILE FOR dollorclicker */
+
+body {
+	width: 95%;
+	background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+}
+
+container {
+	width: 80%;
+	overflow: hidden;
+	
+}
+
+.header {
+	text-align: center;
+}
+
+h1{
+	
+}
+
+hr {
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	background-color: #065C27;
+	box-shadow: 5px 5px 5px #A4BD99;
+	padding: 5px;
+	margin: 5px;
+	color: white;
+}
+
+.kachingdiv {
+	text-align: center;
+}
+
+.kachingdiv button {
+	width: 35%;
+	height: 5em;
+}
+
+.rahadiv {
+	text-align: center;
+}
+
+.riviin {
+    display: -webkit-flex; /* Safari */
+    /*-webkit-flex-wrap: wrap; /* Safari 6.1+ */ /* Rikkoo chromen? */
+    display: flex;  
+	/* flex-wrap: wrap; */
+	/* justify-content: space-around; */
+	
+}
+
+.buydiv {
+	flex: 0 1 40%;
+	margin: 5% ; /* 5% */
+	padding: 15px;
+	border-width: 3px;
+	border-style: solid;
+	border-image: linear-gradient (to bottom, grey, #f5f5f5) 1 100%;
+	-moz-border-image: -moz-linear-gradient(grey, #f5f5f5) 1 100%; 
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(grey), to(#f5f5f5)) 1 100%; 
+	-webkit-border-image: -webkit-linear-gradient(grey, #f5f5f5) 1 100%; 
+	-o-border-image: -o-linear-gradient(grey, #f5f5f5) 1 100%;
+}
+
+.buydiv h3 {
+	text-align: center;
+}
+
+.jokutoinen {
+	flex: 0 1 40%;
+	margin: 5%;
+	padding: 15px;
+	border-width: 3px;
+	border-style: solid;
+	border-image: linear-gradient (to bottom, grey, #f5f5f5) 1 100%;
+	-moz-border-image: -moz-linear-gradient(grey, #f5f5f5) 1 100%; 
+	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(grey), to(#f5f5f5)) 1 100%; 
+	-webkit-border-image: -webkit-linear-gradient(grey, #f5f5f5) 1 100%; 
+	-o-border-image: -o-linear-gradient(grey, #f5f5f5) 1 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	font-size: 10px;
+}
