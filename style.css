@@ -50,12 +50,10 @@ button {
 }
 
 .riviin {
-    display: -webkit-flex; /* Safari */
-    /*-webkit-flex-wrap: wrap; /* Safari 6.1+ */ /* Rikkoo chromen? */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;  
-	/* flex-wrap: wrap; */
-	/* justify-content: space-around; */
-	
 }
 
 .buydiv {
@@ -64,11 +62,9 @@ button {
 	padding: 15px;
 	border-width: 3px;
 	border-style: solid;
-	border-image: linear-gradient (to bottom, grey, #f5f5f5) 1 100%;
-	-moz-border-image: -moz-linear-gradient(grey, #f5f5f5) 1 100%; 
-	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(grey), to(#f5f5f5)) 1 100%; 
-	-webkit-border-image: -webkit-linear-gradient(grey, #f5f5f5) 1 100%; 
-	-o-border-image: -o-linear-gradient(grey, #f5f5f5) 1 100%;
+	border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
+	/*-webkit-border-image: -webkit-linear-gradient(top, grey, #f5f5f5) 1 stretch;*/
+       -o-border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
 }
 
 .buydiv h3 {
@@ -77,15 +73,13 @@ button {
 
 .jokutoinen {
 	flex: 0 1 40%;
-	margin: 5%;
+	margin: 5% ; /* 5% */
 	padding: 15px;
 	border-width: 3px;
 	border-style: solid;
-	border-image: linear-gradient (to bottom, grey, #f5f5f5) 1 100%;
-	-moz-border-image: -moz-linear-gradient(grey, #f5f5f5) 1 100%; 
-	-webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(grey), to(#f5f5f5)) 1 100%; 
-	-webkit-border-image: -webkit-linear-gradient(grey, #f5f5f5) 1 100%; 
-	-o-border-image: -o-linear-gradient(grey, #f5f5f5) 1 100%;
+	border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
+	/*-webkit-border-image: -webkit-linear-gradient(top, grey, #f5f5f5) 1 stretch;*/
+       -o-border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
 }
 
 .footer {
