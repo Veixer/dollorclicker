@@ -63,7 +63,7 @@ button {
 	border-width: 3px;
 	border-style: solid;
 	border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
-	/*-webkit-border-image: -webkit-linear-gradient(top, grey, #f5f5f5) 1 stretch;*/
+	/*-webkit-border-image: -webkit-linear-gradient(top, grey, #f5f5f5) 1 stretch;*/ /* Breaks chrome */
        -o-border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
 }
 
@@ -78,11 +78,12 @@ button {
 	border-width: 3px;
 	border-style: solid;
 	border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
-	/*-webkit-border-image: -webkit-linear-gradient(top, grey, #f5f5f5) 1 stretch;*/
+	/*-webkit-border-image: -webkit-linear-gradient(top, grey, #f5f5f5) 1 stretch;*/ /* Breaks chrome */
        -o-border-image: linear-gradient(to bottom, grey, #f5f5f5) 1 stretch;
 }
 
 .footer {
+	height: 30px;
 	position: absolute;
 	bottom: 0;
 	font-size: 10px;
