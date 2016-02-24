@@ -17,17 +17,18 @@ elcm.addEventListener("click", kaching, false);
 
 // Object Constructor for autoclickers. Also guideline for creating new autoClicker objects.
 // var nimi = new autoClicker(clicks, multiplier, cost, costIncrease)
-function autoClicker(clicks, cost, costIncrease, level) {
+function autoClicker(clicks, cost, costIncrease, level, name) {
   this.clicks = clicks;
   this.cost = cost;
   this.costIncrease = costIncrease;
   this.level = level;
+  this.name = name;
 };
 
 // Autoclickers
-var bottlecollector = new autoClicker(0, 10, 1.15, 0);
-var craftseller = new autoClicker(0, 100, 1.15, 0);
-var hotdog = new autoClicker(0, 1000, 1.15, 0);
+var bottlecollector = new autoClicker(0, 10, 1.15, 0, 'bottlecollector');
+var craftseller = new autoClicker(0, 100, 1.15, 0, 'craftseller');
+var hotdog = new autoClicker(0, 1000, 1.15, 0, 'hotdog');
 
 // Function for buying clickers for Money.
 function buyClicker (c, button) {
@@ -97,7 +98,6 @@ var elhd = document.getElementById("buyhotdog");
 elhd.addEventListener("click", buyHD, false);
 
 // Function for adding clickers work to Money
-
 function clickerMoney() {
 	window.setInterval(function() {
 		money += bottlecollector.clicks;
@@ -105,6 +105,23 @@ function clickerMoney() {
 		money += hotdog.clicks;
 	}, 10)
 }
+
+
+
+// Button-color change for all buy-buttons
+function changeButton(gen) {
+	if (money < gen.cost) {
+		document.getElementById('buy'+gen.name).className = 'buttongrey';
+	}
+	else {
+		document.getElementById('buy'+gen.name).className = 'button';
+	}
+}
+
+
+
+
+
 
 // Function for updating amount of Money.
 function updateMoney() {
@@ -116,6 +133,10 @@ function updateMoney() {
 	var e2 = document.getElementById("moneyps");
 	e2.innerHTML = mps.toFixed(2);
 	
+	changeButton(bottlecollector);
+	changeButton(craftseller);
+	changeButton(hotdog);
+	
   }, 10);
 };
 // Making onload event after window loads.
@@ -124,3 +145,6 @@ window.onload = function start() {
   updateMoney();
   clickerMoney();
 };
+
+
+
