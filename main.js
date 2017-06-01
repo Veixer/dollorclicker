@@ -5,15 +5,15 @@ var moneyps = 0;
 
 
 // Clicking for Money
-function kaching () {
+function addMoney () {
 	money++;
   updateMoney();
 };
 
 // Event Listener for Clicking Money
 
-var elcm = document.getElementById("kaching");
-elcm.addEventListener("click", kaching, false);
+var elcm = document.getElementById("addMoney");
+elcm.addEventListener("click", addMoney, false);
 
 // Object Constructor for autoclickers. Also guideline for creating new autoClicker objects.
 // var nimi = new autoClicker(clicks, multiplier, cost, costIncrease)
@@ -117,8 +117,6 @@ function changeButton(gen) {
 		document.getElementById('buy'+gen.name).className = 'button';
 	}
 }
-
-
 
 
 
